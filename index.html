@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Memoir</title>
+  <link rel="stylesheet" href="moving background.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="moving-bg">
   <header>
     <nav>
       <ul>
@@ -18,7 +20,47 @@
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main class="homepage">
+    <section class="home-hero container">
+      <div class="hero-text">
+        <h1>All aboard the Bushrow Boat</h1>
+        <div class="cta-buttons">
+          <a class="cta-button" href="cookbook.html">Wait, he's cookin</a>
+          <a class="cta-button" href="adventure.html">Oh the places I'll go!</a>
+          <a class="cta-button" href="about.html">Goofy Personal Memoir</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div style="text-align:center;color:rgba(255,255,255,0.85);">
+          <strong style="font-size:1.25rem">Featured</strong>
+          <p style="opacity:0.9;margin-top:0.5rem">Seasonal picks & storytelling</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase container">
+      <div class="showcase-card">
+        <div class="card-media"></div>
+        <h3>Popular Recipes</h3>
+        <p>Quick access to fan favorites and chef-tested meals.</p>
+        <a class="card-cta" href="cookbook.html">View Recipes</a>
+      </div>
+
+      <div class="showcase-card">
+        <div class="card-media"></div>
+        <h3>Travel Stories</h3>
+        <p>Read our adventures and trip-inspired recipes.</p>
+        <a class="card-cta" href="adventure.html">Read Adventures</a>
+      </div>
+
+      <div class="showcase-card">
+        <div class="card-media"></div>
+        <h3>About the Author</h3>
+        <p>Learn about the mission and the people behind this site.</p>
+        <a class="card-cta" href="about.html">About</a>
+      </div>
+    </section>
+  </main>
   <footer>
     <p>Last updated in May 2026. Spice of life website</p>
   </footer>
