@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trvia</title>
+  <link rel="stylesheet" href="trivia.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body class="trivia-page"> 
+    <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cookbook.html">Recipes</a></li>
+        <li><a href="adventure.html">Adventures</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="trivia-main" id="trivia-main">
+    <h1>Trivia</h1>
+    <p> Welcome to my trivia! Answers all three question to find out the bonus question!</p>
+
+
+    <h2> Trivia questions!</h2>
+    <form action="trivia_answers.php" method="get">
+      <label> Young travler! What is your name?  <input tpye="text" id="name"name="name" placeholder="^⩊^" required><br><br></label>
+        <label for="question1">1. As the mighty gold keeper, what was the restruant for Volaré fundraiser?</label><br>
+      <input type="text" id="question1" name="question1" placeholder="Took place November 2026" size="21px" required><br><br>
+
+      <label for="question2">2. There is a common fruit that is associated with fall? </label><br>
+      <input type="text" id="question2" name="question2" placeholder="Red, round, very good donut flavor (plus sugar😋)" size="41px" required><br><br>
+
+      <label for="question3">3. As an avid weatherwomen, what is the offical service of the U.S. goverment when it come to weather? </label><br>
+      <input type="text" id="question3" name="question3" placeholder="Abbreviated as NWS" size="15px" required><br><br>
+
+      <p> Submit and if all answers are correct, you unlock the bonus question!</p>
+      <input type="submit" value="Submit Answers"> <input type="reset" value="Reset Answers">
+
+
+
+  </main>
+</body>

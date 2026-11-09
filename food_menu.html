@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendsgiving Menu / Survey</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="icon" href="images/josh favicon.ico" type="favicon/x-icon">
+</head>
+
+<body>
+    <form action="submit_menu.php" method="get">
+        <h1>Here is the 2026 friendsgiving menu:</h1>
+        <p>This will be to collect the opinions of food for y'all as well as determine which dates work for you!</p>
+        <p> Please fill out the survey by November 7th</p>
+
+        <h2>Who are you: </h2>
+        <label for="jo">
+            <input type="radio" id="jo" name="friend" value="Jo :P">
+            JoJo
+        </label><br>
+        <label for="sam">
+            <input type="radio" id="sam" name="friend" value="Sam :D">
+            SamSam
+        </label><br>
+        <label for="kat">
+            <input type="radio" id="kat" name="friend" value="Katie :3">
+            Kat
+        </label><br>
+        <label for="Maria">
+            <input type="radio" id="Maria" name="friend" value="Maria :3">
+            Maria
+        </label><br><br>
+        <label for="Val">
+            <input type="radio" id="Val" name="friend" value="Val :D">
+            Val
+        </label><br>
+        <label for="noah">
+            <input type="radio" id="noah" name="friend" value="Noah :P">
+            NoNo
+        </label><br>
+
+
+        <h2>What time for friendsgiving:</h2>
+        <p>The date we were thinking of is November 21, 2026 because all I know is we have Holiday parade in the morning and Cook at Noon, so probably would be around 6:30 PM. I am open to suggestions though!</p>
+        <label for="date">
+            Select a date for friendsgiving (November 14-30, 2026):
+        </label><br>
+        <input type="date" id="custom_date" name="date" min="2026-11-14" max="2026-11-30" required><br><br>
+        <p>The ranges of the dates are from November 14-30, 2026.</p>
+
+        <h2>Menu:</h2>
+        <p> Here is the suggestioned list for items to bring. I plan on making dessert and Ham.</p>
+        
+        <label for="menu">Select the item(s) you would like to bring:</label><br>
+        <label for="appe tizers">
+            <input type="checkbox" id="mashed_potatoes" name="menu[]" value="Mashed Potatoes">
+            Mashed Potatoes
+        </label><br>
+        <label for="platters_and_utensils">
+            <input type="checkbox" id="platters_and_utensils" name="menu[]" value="Plates and Utensils">
+            Plates and Utensils
+        </label><br>
+        <label for="drinks">
+            <input type="checkbox" id="drinks" name="menu[]" value="Drinks">
+            Drinks (Apple Cider / Sparkling Juice?)
+        </label><br>
+        <label for="dessert">
+            <input type="checkbox" id="dessert" name="menu[]" value="Dessert">
+            Dessert
+        </label><br>
+        <label for="other">
+            <input type="checkbox" id="other" name="menu[]" value="Other"> 
+            Anything else? <br><input type="text" id="other_text" name="other_text" placeholder="Your suggestion here">
+        </label><br>
+
+
+        <br><br>
+        <input type="submit" value="Submit">
+</body>
